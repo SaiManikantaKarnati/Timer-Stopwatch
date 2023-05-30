@@ -1,0 +1,107 @@
+/* CSS Styles */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+  }
+  
+  .timer {
+    padding: 20px;
+  }
+  
+  .timer,
+  .stopwatch {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .stopwatch {
+    overflow: hidden;
+    max-height: 200px;
+    overflow-y: scroll;
+    position: relative;
+    padding: 40px;
+  }
+
+  .stopwatch::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent; 
+    border-radius: 4px;
+    position: absolute; 
+    top: 8px; 
+    bottom: 8px; 
+    right: 8px; 
+  }
+  
+  .stopwatch::-webkit-scrollbar-thumb {
+    background-color: #888;
+    border-radius: 4px;
+  }
+  
+  .stopwatch::-webkit-scrollbar-track {
+    background-color: #f2f2f2;
+  }
+
+  h2 {
+    color: #333;
+  }
+  
+  #timerDisplay,
+  #stopwatchDisplay {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px;
+  }
+  
+  .controls {
+    margin-top: 20px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.1);
+  }
+  
+  button:active {
+    background-color: #3e8e41;
+  }
+  
+  #lapList {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .lapItem {
+    background-color: #f9f9f9;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 4px;
+  }
